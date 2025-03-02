@@ -1,6 +1,14 @@
+import java.util.*;
+
 public class Gravitacija {
     public static void main(String[] args) {
-        System.out.print("OIS je zakon!");
+        Scanner sc = new Scanner(System.in);
+        // System.out.print("OIS je zakon!");
+
+        double visina = sc.nextDouble();
+        izpisi(visina, gravitacija(visina));
+
+        sc.close();
     }
 
     public static double gravitacija(double visina) {
@@ -9,7 +17,7 @@ public class Gravitacija {
     }
 
     public static void izpisi(double visina, double pospesek) {
-        System.out.printf("VISINA: %d\n -> POSPESEK: %d", visina, pospesek);
+        System.out.printf("VISINA: %f\n -> POSPESEK: %f", visina, pospesek);
     }
 
 }
